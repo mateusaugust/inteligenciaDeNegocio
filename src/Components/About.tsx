@@ -2,7 +2,7 @@ import { Box, Typography, Link } from "@mui/material";
 
 export const About = () => {
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", gap: "15px" }}>
+    <Box sx={{ display: "flex", flexDirection: "column", gap: "15px", alignItems:'center' }}>
       <Box
         sx={{ backgroundColor: "#213435", borderRadius: "10px", boxShadow: 3 }}
       >
