@@ -37,8 +37,6 @@ export const About = () => {
         >
           <b>Motivação pela Escolha da Base de Dados</b>
           <br />
-          
-         
         </Typography>
 
         <Typography sx={{color:'white', fontSize:'10px', textAlign:'justify'}}>
