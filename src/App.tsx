@@ -1,3 +1,4 @@
+import { About } from "./Components/About";
 
 
 export function App() {
@@ -5,7 +6,7 @@ export function App() {
 
   return (
     <>
-      teste
+     <About/>
     </>
   )
 }
