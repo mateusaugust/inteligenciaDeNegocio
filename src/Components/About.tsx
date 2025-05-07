@@ -25,10 +25,10 @@ export const About = () => {
         <Typography
           sx={{ color: "white", textAlign: "center", fontSize: "15px" }}
         >
-          Base de dados usada
+          <b>Base de dados usada</b>
         </Typography>
 
-        <Link href="https://www.kaggle.com/datasets/timmofeyy/-coffee-rice-and-beef-price-changes-for-30-years">
+        <Link sx={{textAlign:"center"}} href="https://www.kaggle.com/datasets/timmofeyy/-coffee-rice-and-beef-price-changes-for-30-years">
           ☕Coffee, Rice and Beef Prices Changes for 30 Years
         </Link>
 
@@ -38,13 +38,17 @@ export const About = () => {
           <b>Motivação pela Escolha da Base de Dados</b>
           <br />
           
-          <br />A escolha desta base de dados se deu por sua consistência e
-          relevância em relação à minha atuação atual no mercado de trabalho.<br/><br/>
+         
+        </Typography>
+
+        <Typography sx={{color:'white', fontSize:'10px', textAlign:'justify'}}>
+        <br />A escolha desta base de dados se deu por sua consistência e
+          relevância em relação à minha atuação atual no mercado de trabalho.<br/>
           Apesar de conter informações sobre diversas commodities, o café foi o
           principal foco de interesse devido à riqueza e profundidade dos dados
-          disponíveis. <br/><br/>A base inclui variáveis fundamentais como preço, ano,
+          disponíveis. <br/>A base inclui variáveis fundamentais como preço, ano,
           mês, inflação e o preço ajustado pela inflação, o que possibilita
-          análises mais precisas e contextualizadas.<br/><br/> Esses dados serviram como
+          análises mais precisas e contextualizadas.<br/> Esses dados serviram como
           base para prever as tendências do mercado de café, permitindo que
           usuários explorem a evolução dos preços ao longo do tempo.
         </Typography>
