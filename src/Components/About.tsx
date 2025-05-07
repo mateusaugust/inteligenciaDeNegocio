@@ -50,6 +50,10 @@ export const About = () => {
           base para prever as tendências do mercado de café, permitindo que
           usuários explorem a evolução dos preços ao longo do tempo.
         </Typography>
+
+        <Link sx={{textAlign:"center"}} href="https://docs.google.com/document/d/1--YVrjdmaflTVIKWeFdowR8bbyJhfHki1RfTzL0l2lw/edit?usp=sharing">
+          Questões Respondidas 
+        </Link>
       </Box>
     </Box>
   );
