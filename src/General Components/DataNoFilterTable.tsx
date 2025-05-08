@@ -9,12 +9,14 @@ import {
 
 export const DataNoFilterTable = () => {
   const headerTable1 = Array<string>("Year", "Month", "Price_bife_kilo");
-  const headerTable2 = Array<string>("Price_rice_kilo", "Price_coffee_kilo", "Inflation_rate");
-  const headerTable3 = Array<string>("Price_rice_infl", "Price_beef_infl", "Price_coffee_infl");
+  const headerTable2 = Array<string>("Price_rice_kilo", "Price_coffee_kilo");
+  const headerTable3 = Array<string>("Price_rice_infl", "Price_beef_infl");
+  const headerTable4 = Array<string>("Inflation_rate", "Price_coffee_infl");
 
   const bodyTable1 = Array<string>("Number", "String", "Number");
-  const bodyTable2 = Array<string>("Number", "Number", "Number");
-  const bodyTable3 = Array<string>("Number", "Number", "Number");
+  const bodyTable2 = Array<string>("Number", "Number");
+  const bodyTable3 = Array<string>("Number", "Number");
+  const bodyTable4 = Array<string>("Number", "Number");
 
   
   return (
@@ -67,6 +69,24 @@ export const DataNoFilterTable = () => {
         <TableBody>
           <TableRow>
             {bodyTable3.map((body) => (
+              <TableCell sx={{ textAlign: "center" }}>{body}</TableCell>
+            ))}
+          </TableRow>
+        </TableBody>
+      </Table>
+
+      <Table sx={{ backgroundColor: "white" }}>
+        <TableHead>
+          <TableRow>
+            {headerTable4.map((head) => (
+              <TableCell sx={{ textAlign: "center" }}>{head}</TableCell>
+            ))}
+          </TableRow>
+        </TableHead>
+
+        <TableBody>
+          <TableRow>
+            {bodyTable4.map((body) => (
               <TableCell sx={{ textAlign: "center" }}>{body}</TableCell>
             ))}
           </TableRow>
