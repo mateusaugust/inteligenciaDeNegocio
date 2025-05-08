@@ -118,6 +118,51 @@ export const About = () => {
          O ano de 2006 foi retirado pois estava com varias cedulas vazias.
         </Typography>
       </Box>
+
+      <Box
+        sx={{
+          backgroundColor: "#213435",
+          borderRadius: "10px",
+          boxShadow: 3,
+          padding: "15px",
+          gap: "10px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <Typography
+          sx={{ color: "white", textAlign: "center", fontSize: "15px" }}
+        >
+          <b>Base de Dados "Sem Tratamento"</b>
+        </Typography>
+
+        <DataNoFilterTable/>
+      </Box>
+
+
+      <Box
+        sx={{
+          backgroundColor: "#213435",
+          borderRadius: "10px",
+          boxShadow: 3,
+          padding: "15px",
+          gap: "10px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <Typography
+          sx={{ color: "white", textAlign: "center", fontSize: "15px" }}
+        >
+          <b>Variaveis <span style={{color:'#9f5412'}}>Dependentes(Target)</span>  
+          &nbsp;e &nbsp;
+          <span style={{color:'#4223d7'}}>Independentes</span></b>
+        </Typography>
+
+       
+      </Box>
     </Box>
   );
 };
