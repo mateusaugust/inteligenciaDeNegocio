@@ -1,5 +1,6 @@
 import { Box, Typography, Link } from "@mui/material";
 import { DataNoFilterTable } from "../General Components/DataNoFilterTable";
+import { DataWithFilter } from "../General Components/DataWithFilter";
 
 export const About = () => {
   return (
@@ -87,6 +88,35 @@ export const About = () => {
         </Typography>
 
         <DataNoFilterTable/>
+      </Box>
+
+
+      <Box
+        sx={{
+          backgroundColor: "#213435",
+          borderRadius: "10px",
+          boxShadow: 3,
+          padding: "15px",
+          gap: "10px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <Typography
+          sx={{ color: "white", textAlign: "center", fontSize: "15px" }}
+        >
+          <b>Base de Dados "Com Tratamento"</b>
+        </Typography>
+
+        <DataWithFilter/>
+
+
+        <Typography
+          sx={{ color: "white", fontSize: "10px", textAlign: "justify" }}
+        >
+         O ano de 2006 foi retirado pois estava com varias cedulas vazias.
+        </Typography>
       </Box>
     </Box>
   );
