@@ -87,9 +87,8 @@ export const About = () => {
           <b>Base de Dados "Sem Tratamento"</b>
         </Typography>
 
-        <DataNoFilterTable/>
+        <DataNoFilterTable />
       </Box>
-
 
       <Box
         sx={{
@@ -109,13 +108,12 @@ export const About = () => {
           <b>Base de Dados "Com Tratamento"</b>
         </Typography>
 
-        <DataWithFilter/>
-
+        <DataWithFilter />
 
         <Typography
           sx={{ color: "white", fontSize: "10px", textAlign: "justify" }}
         >
-         O ano de 2006 foi retirado pois estava com varias cedulas vazias.
+          O ano de 2006 foi retirado pois estava com varias cedulas vazias.
         </Typography>
       </Box>
 
@@ -134,34 +132,61 @@ export const About = () => {
         <Typography
           sx={{ color: "white", textAlign: "center", fontSize: "15px" }}
         >
-          <b>Base de Dados "Sem Tratamento"</b>
+          <b>
+            Variaveis{" "}
+            <span style={{ color: "#9f5412" }}>Dependentes(Target)</span>
+            &nbsp;e &nbsp;
+            <span style={{ color: "#4223d7" }}>Independentes</span>
+          </b>
         </Typography>
 
-        <DataNoFilterTable/>
-      </Box>
-
-
-      <Box
-        sx={{
-          backgroundColor: "#213435",
-          borderRadius: "10px",
-          boxShadow: 3,
-          padding: "15px",
-          gap: "10px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <Typography
-          sx={{ color: "white", textAlign: "center", fontSize: "15px" }}
-        >
-          <b>Variaveis <span style={{color:'#9f5412'}}>Dependentes(Target)</span>  
-          &nbsp;e &nbsp;
-          <span style={{color:'#4223d7'}}>Independentes</span></b>
+        <Typography sx={{ color: "white", fontSize: "15px" }}>
+          <b>
+            Aprendizado semi-supervisionado - regressão linear simples:
+            <span style={{ color: "#9f5412" }}>preço(futuro) do café</span>{" "}
+            &nbsp;e &nbsp;
+            <span style={{ color: "#4223d7" }}>ano</span>{" "}
+          </b>
+          Resultado do R-Squared:0,212
+          <br />
+          Resultado do Adjusted R-Squared: 0,2097
         </Typography>
 
-       
+        <Typography sx={{ color: "white", fontSize: "15px" }}>
+        <br/>
+          <b>
+            Aprendizado semi-supervisionado- regressão polinomial simples:
+            <span style={{ color: "#9f5412" }}>preço(futuro) do café</span>{" "}
+            &nbsp;e &nbsp;
+            <span style={{ color: "#4223d7" }}>ano</span>{" "}
+          </b>
+          Melhor Polinomio: 5<br />
+          Resultado do R-Squared:0,2123
+          <br />
+          Resultado do Adjusted R-Squared: 0,2078
+        </Typography>
+
+        <Typography sx={{ color: "white", fontSize: "15px" }}>
+        <br/>
+        
+          <b>
+            Aprendizado semi-supervisionado- regressão polinomial múltipla:
+            <span style={{ color: "#9f5412" }}>preço(futuro) do café</span>
+            &nbsp;e &nbsp;
+            <span style={{ color: "#4223d7" }}>Anos e Inflação</span>
+          </b>
+          <br/>
+          <br/>
+          Porque escolhi essas Variaveis:Pois são essas variáveis que vão me
+          levar a uma melhor estimativa do preço futuro e que melhor atenderia
+          as minhas necessidades dentro da base de dados
+          <br/> 
+          Melhor Polinomio: 5
+          <br />
+          Resultado do R-Squared:0,6941
+          <br />
+          Resultado do Adjusted R-Squared: 0,685
+        </Typography>
       </Box>
     </Box>
   );
