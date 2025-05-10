@@ -181,6 +181,7 @@ export const About = () => {
           levar a uma melhor estimativa do preço futuro e que melhor atenderia
           as minhas necessidades dentro da base de dados
           <br/> 
+          <br/>
           Melhor Polinomio: 5
           <br />
           Resultado do R-Squared:0,6941
