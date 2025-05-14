@@ -126,7 +126,7 @@ export const About = () => {
           gap: "10px",
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
+          alignItems: "justify",
         }}
       >
         <Typography
@@ -147,9 +147,7 @@ export const About = () => {
             &nbsp;e &nbsp;
             <span style={{ color: "#4223d7" }}>ano</span>{" "}
           </b>
-          Resultado do R-Squared:0,212
-          <br />
-          Resultado do Adjusted R-Squared: 0,2097
+          
         </Typography>
 
         <Typography sx={{ color: "white", fontSize: "15px" }}>
@@ -160,10 +158,7 @@ export const About = () => {
             &nbsp;e &nbsp;
             <span style={{ color: "#4223d7" }}>ano</span>{" "}
           </b>
-          Melhor Polinomio: 5<br />
-          Resultado do R-Squared:0,2123
-          <br />
-          Resultado do Adjusted R-Squared: 0,2078
+          
         </Typography>
 
         <Typography sx={{ color: "white", fontSize: "15px" }}>
@@ -177,16 +172,10 @@ export const About = () => {
           </b>
           <br/>
           <br/>
-          Porque escolhi essas Variaveis:Pois são essas variáveis que vão me
+          Porque escolhi essas Variaveis: Pois são essas variáveis que vão me
           levar a uma melhor estimativa do preço futuro e que melhor atenderia
           as minhas necessidades dentro da base de dados
-          <br/> 
-          <br/>
-          Melhor Polinomio: 5
-          <br />
-          Resultado do R-Squared:0,6941
-          <br />
-          Resultado do Adjusted R-Squared: 0,685
+          
         </Typography>
       </Box>
     </Box>
